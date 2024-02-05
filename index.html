@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Отзывы о продуктах</title>
+  <script src="script.js" defer></script>
+  <style>
+    .product-list {
+      margin-bottom: 20px;
+    }
+    .product-list > li {
+      cursor: pointer;
+    }
+    .reviews-list {
+      margin-bottom: 20px;
+    }
+    .review {
+      margin-bottom: 10px;
+    }
+    .delete-btn {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Отзывы о продуктах</h1>
+
+  <div id="add-review">
+    <h2>Добавить отзыв</h2>
+    <label for="product-name">Название продукта:</label>
+    <input type="text" id="product-name" required>
+    <br>
+    <label for="review-text">Отзыв:</label>
+    <textarea id="review-text" required></textarea>
+    <br>
+    <button id="add-review-btn">Добавить отзыв</button>
+  </div>
+
+  <div id="view-reviews">
+    <h2>Отзывы</h2>
+    <ul id="product-list" class="product-list"></ul>
+    <ul id="reviews-list" class="reviews-list"></ul>
+  </div>
+
+
+</body>
+</html>
